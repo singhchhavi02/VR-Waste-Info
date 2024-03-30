@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+             <img id="1" src="wall1.jpg">
+             <img id="2" src="wall2.jpg">
+             <img id="3" src="wall3.jpg">
+             <img id="4" src="wall4.jpg">
+             </a-assets>
+     
+    <a-sky src="#sky"></a-sky>
+
+        <!-- Ground -->
+      <a-plane rotation="-90 0 0" width="100" height="100" color="#7CFC00"></a-plane>
+
+      <!-- Walls -->
+      <!-- Front wall -->
+      <a-box position="0 2.5 -5" width="10" height="5" depth="0.1" color="#A9A9A9"></a-box>
+      <!-- Back wall -->
+      <a-box position="0 2.5 5" width="10" height="5" depth="0.1" color="#A9A9A9"></a-box>
+      <!-- Left wall -->
+      <a-box position="-5 2.5 0" width="0.1" height="5" depth="10" color="#A9A9A9"></a-box>
+      <!-- Right wall -->
+      <a-box position="5 2.5 0" width="0.1" height="5" depth="10" color="#A9A9A9"></a-box>
+      <!-- Ceiling -->
+      <a-box position="0 5 0" width="10" height="0.1" depth="10" color="#A9A9A9"></a-box>
+      <!-- Floor -->
+      <a-box position="0 0 0" width="10" height="0.1" depth="10" color="#53595D"></a-box>
+
+    <!-- ground --> 
+   <a-image src="#1" position="0 2.5 4.8" rotation="0 180 0"   scale="10 5 2"></a-image> 
+   <a-image src="#2" position="4.8 2.5 0" rotation="0 -90 0"   scale="10 5 2"></a-image>
+   <a-image src="#3" position="-4.8 2.5 0" rotation="0 90 0"   scale="10 5 2"></a-image>
+   <a-image src="#4" position="0 2.5 -4.8" rotation="0 0 0"   scale="10 5 2"></a-image>
+</a-scene>
+
+</body>
+</html
